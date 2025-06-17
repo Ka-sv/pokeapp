@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular'; // <-- IMPORTANTE
 import { PokemonService } from './services/pokemon.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
+  standalone: true,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  imports: [CommonModule, FormsModule, IonicModule], // <-- ADICIONE IonicModule AQUI
 })
 export class AppComponent implements OnInit {
   pokemon: any;
