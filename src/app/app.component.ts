@@ -6,7 +6,7 @@ import { PokemonService } from './services/pokemon.service';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
+  
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   imports: [CommonModule, FormsModule, IonicModule], // <-- ADICIONE IonicModule AQUI
